@@ -1,0 +1,105 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+  <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" />
+  <title>Sign-Up</title>
+  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+
+<body>
+  <div class="relative flex size-full min-h-screen flex-col bg-[#FFFFFF] group/design-root overflow-x-hidden"
+    style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+    <!-- Navigation Bar -->
+    <header
+      class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#F4EFE6] px-10 py-3">
+      <div class="flex items-center gap-4 text-[#1C160C]">
+        <h2 class="text-[#1C160C] text-lg font-bold leading-tight tracking-[-0.015em]">AI Translation Tool</h2>
+      </div>
+      <div class="flex flex-1 justify-end gap-8">
+        <div class="flex items-center gap-9">
+          <a class="text-[#1C160C] text-sm font-medium leading-normal" href="/index.html">Home</a>
+          <a class="text-[#1C160C] text-sm font-medium leading-normal" href="login.html">Login</a>
+          <a class="text-[#1C160C] text-sm font-medium leading-normal" href="translation.html">Translation</a>
+          <a class="text-[#1C160C] text-sm font-medium leading-normal" href="under-development.html">API docs</a>
+          <a class="text-[#1C160C] text-sm font-medium leading-normal" href="pricing.html">Pricing</a>
+        </div>
+        <a href="/signup.html">
+          <button
+            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#019863] text-[#FFFFFF] text-sm font-bold leading-normal tracking-[0.015em]">
+            <span class="truncate">Sign Up NOW</span>
+          </button>
+        </a>
+      </div>
+    </header>
+    <!-- Main Content -->
+    <main class="flex flex-1">
+      <div class="flex w-full">
+        <!-- Left Section -->
+        <div class="flex flex-1 items-center justify-center bg-[#B3C7F3]">
+          <p class="text-[#FFFFFF] text-4xl font-bold leading-tight p-10">
+            Welcome to translatio signup page, please enter details to sign up
+          </p>
+        </div>
+        <!-- Right Section -->
+        <div class="flex flex-1 items-center justify-center p-10">
+          <div class="w-full max-w-md">
+            <h1 class="text-[#1C160C] text-2xl font-bold mb-6">Sign-up</h1>
+            <form class="space-y-4">
+              <div>
+                <label for="email" class="block text-sm text-[#1C160C] font-medium mb-1">Email</label>
+                <input type="email" id="email" name="email"
+                  class="w-full border border-[#E9DFCE] rounded-lg px-4 py-2 text-sm" placeholder="Enter your email"
+                  required />
+              </div>
+              <div>
+                <label for="username" class="block text-sm text-[#1C160C] font-medium mb-1">Username</label>
+                <input type="text" id="username" name="username"
+                  class="w-full border border-[#E9DFCE] rounded-lg px-4 py-2 text-sm" placeholder="Enter your username"
+                  required />
+              </div>
+              <div>
+                <label for="password" class="block text-sm text-[#1C160C] font-medium mb-1">Password</label>
+                <input type="password" id="password" name="password"
+                  class="w-full border border-[#E9DFCE] rounded-lg px-4 py-2 text-sm" placeholder="Enter your password"
+                  required />
+              </div>
+              <div>
+                <label for="confirm-password" class="block text-sm text-[#1C160C] font-medium mb-1">Confirm
+                  Password</label>
+                <input type="password" id="confirm-password" name="confirm-password"
+                  class="w-full border border-[#E9DFCE] rounded-lg px-4 py-2 text-sm"
+                  placeholder="Confirm your password" required />
+              </div>
+              <a href="/translation.html">
+                <button type="submit" class="w-full py-2 text-white bg-[#6366F1] rounded-lg text-sm font-bold">
+                  Sign Up
+                </button>
+              </a>
+            </form>
+            <p class="text-center text-sm text-[#1C160C] mt-4">
+              Already have an account? <a href="/login.html class="text-[#A855F7] font-bold">Login here</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="flex justify-center">
+      <div class="flex max-w-[960px] flex-1 flex-col">
+        <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+          <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+          </div>
+          <div class="flex flex-wrap justify-center gap-4"></div>
+          <p class="text-[#A18249] text-base font-normal leading-normal">Developed By FA23-BSE-077</p>
+        </footer>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

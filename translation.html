@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" />
+    <title>Translate</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+
+<body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#FFFFFF] group/design-root overflow-x-hidden"
+        style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+        <!-- Navigation Bar -->
+        <header
+            class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#F4EFE6] px-10 py-3">
+            <div class="flex items-center gap-4 text-[#1C160C]">
+                <h2 class="text-[#1C160C] text-lg font-bold leading-tight tracking-[-0.015em]">AI Translation Tool
+                </h2>
+            </div>
+            <div class="flex flex-1 justify-end gap-8">
+                <div class="flex items-center gap-9">
+                    <a class="text-[#1C160C] text-sm font-medium leading-normal" href="/index.html">Home</a>
+                    <a class="text-[#1C160C] text-sm font-medium leading-normal" href="login.html">Login</a>
+                    <a class="text-[#1C160C] text-sm font-medium leading-normal" href="translation.html">Translation</a>
+                    <a class="text-[#1C160C] text-sm font-medium leading-normal" href="under-development.html">API docs</a>
+                    <a class="text-[#1C160C] text-sm font-medium leading-normal" href="pricing.html">Pricing</a>
+                  </div>
+                  <a href="/signup.html">
+                    <button
+                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#019863] text-[#FFFFFF] text-sm font-bold leading-normal tracking-[0.015em]">
+                        <span class="truncate">Sign Up NOW</span>
+                    </button>
+                </a>
+            </div>
+        </header>
+        <!-- Main Content -->
+        <main class="flex flex-1 px-8 py-10">
+            <div class="flex w-full justify-between">
+                <!-- Left Section -->
+                <div class="flex flex-col gap-8">
+                    <!-- Custom Checkboxes -->
+                    <div class="flex items-center gap-3">
+                        <input type="checkbox" id="flag-words"
+                            class="w-5 h-5 border-2 border-gray-700 rounded-lg focus:ring-2 focus:ring-[#0F766E]" />
+                        <label for="flag-words" class="text-sm text-[#1C160C] font-medium">Flag inappropriate
+                            words</label>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <input type="checkbox" id="cultural-mode"
+                            class="w-5 h-5 border-2 border-gray-700 rounded-lg focus:ring-2 focus:ring-[#0F766E]" />
+                        <label for="cultural-mode" class="text-sm text-[#1C160C] font-medium">Cultural sensitive
+                            mode</label>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <input type="checkbox" id="children-mode"
+                            class="w-5 h-5 border-2 border-gray-700 rounded-lg focus:ring-2 focus:ring-purple-500"
+                            checked />
+                        <label for="children-mode" class="text-sm text-[#1C160C] font-medium">Children mode</label>
+                    </div>
+                </div>
+                <!-- Right Section -->
+                <div class="flex flex-1 flex-col gap-8">
+                    <!-- Text Areas with Darker Borders -->
+                    <textarea class="border border-gray-700 rounded-lg p-4 w-full h-28 text-sm"
+                        placeholder="Enter text to translate"></textarea>
+                    <div class="flex items-center gap-4">
+                        <button
+                            class="flex items-center justify-center w-32 h-12 rounded-lg bg-[#0F766E] text-[#FFFFFF] font-bold">
+                            Translate
+                        </button>
+                        <label for="file-upload"
+                            class="flex items-center justify-center w-12 h-12 cursor-pointer rounded-lg bg-gray-200 text-gray-700 border border-gray-400">
+                            📎
+                        </label>
+                        <input type="file" id="file-upload" class="hidden" />
+                    </div>
+                    <textarea class="border border-gray-700 rounded-lg p-4 w-full h-28 text-sm"
+                        placeholder="Translated text will appear here"></textarea>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="flex justify-center">
+        <div class="flex max-w-[960px] flex-1 flex-col">
+          <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+            <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+            </div>
+            <div class="flex flex-wrap justify-center gap-4"></div>
+            <p class="text-[#A18249] text-base font-normal leading-normal">Developed By FA23-BSE-077</p>
+          </footer>
+        </div>
+      </footer>
+</body>
+
+</html>
